@@ -6,14 +6,48 @@
   <link rel="icon" type="image/png" href="./assets/music%20shop-jRuONXiE.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music Shop</title>
-  <script type="module" crossorigin src="./assets/index-BKjHIntf.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dbi6oqxD.css">
+  <script type="module" crossorigin src="./assets/main-D53NCbp5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-Wp-qsdpf.css">
 </head>
 
-<body>
-  <h1 class="text-4xl text-center mt-20"><span style="font-family: 'Times New Roman', Times, serif;"><strong>Proiect
-        Tailwind</strong></span></h1>
-  <div id="app"></div>
+<body class="bg-gray-100">
+  <nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-white text-2xl font-bold">Music Shop</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-white">Instruments</a></li>
+        <li><a href="about.html" class="text-white">About</a></li>
+        <li><a href="#" class="text-white">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="text-center text-blue-800 mt-10">
+    <h1 class="text-4xl font-bold"><span style="font-family: 'Times New Roman', Times, serif;">HOME</span></h1>
+  </header>
+
+  <main class="container mx-auto mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="./assets/guitar-Cywo31pr.jpg" alt="Guitar" class="w-full h-50 object-cover object-center mb-4">
+        <h2 class="text-xl font-bold mb-2">Guitar</h2>
+        <h3 class="text-xl font-bold mb-2">299.99$</h3>
+        <p class="text-gray-700">A high-quality acoustic guitar with a rich sound.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="./assets/piano-CgJSkbGF.jpg" alt="Piano" class="w-full h-50 object-cover object-center mb-4">
+        <h2 class="text-xl font-bold mb-2">Yamaha P-225B Digital Piano - Black </h2>
+        <h3 class="text-xl font-bold mb-2">839.00$</h3>
+        <p class="text-gray-700">A compact piano with the sound and features to satisfy the needs of advanced players</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <img src="./assets/drums-Di_T72Bw.jpg" alt="Drums" class="w-full h-50 object-cover object-center mb-4">
+        <h2 class="text-xl font-bold mb-2">Drums</h2>
+        <h3 class="text-xl font-bold mb-2">499.99$</h3>
+        <p class="text-gray-700">A complete drum set for professional drummers.</p>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
