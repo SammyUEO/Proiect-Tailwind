@@ -6,14 +6,24 @@
     body.bg-gray-100 {
         background-color:  #293750; 
     }
+    body {
+    background-image: url('/images/Sign In pic.jpg');
+    background-size: cover; /* Ajustează dimensiunea imaginii */
+    background-position: center; /* Centrează imaginea */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+  }
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign In</title>
   <script type="module" crossorigin src="./main.js"></script>
+ 
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+
+<body class="bg-[url('/images/Sign In pic.jpg')] bg-gray-100 bg-[url('/images/Sign In pic.jpg')] flex items-center justify-center min-h-screen">
+  
   <div class="w-80 max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
     <form class="space-y-6" action="#">
       <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>

@@ -3,7 +3,7 @@ export default defineConfig({
     base: '',
     build: {
         rollupOptions: {
-            input: ["./index.html", "./SignIn.html", "./SignUp.html"]
+            input: ["./index.html", "./SignIn.html", "./SignUp.html", ]
         }
     }
 })
