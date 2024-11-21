@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="./images/1-removebg-preview.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperare Parolă</title>
+    <title>Reset Password</title>
     <script type="module" crossorigin src="./main.js"></script>
     <style>
         body {
@@ -17,15 +17,15 @@
 </head>
 <body class="bg-[url('/images/Sign In pic.jpg')] bg-gray-100 bg-[url('/images/Sign In pic.jpg')] flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
-        <h2 class="text-2xl font-bold text-gray-800 text-center">Recuperare Parolă</h2>
+        <h2 class="text-2xl font-bold text-gray-800 text-center">Reset Password</h2>
         <p class="text-gray-600 text-center mt-2">
-            Introdu adresa de email pentru a primi un link de resetare a parolei.
+            Enter your email address to receive a password reset link.
         </p>
 
         <form action="/password-recovery" method="POST" class="mt-6">
             <!-- Câmp pentru email -->
             <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-medium mb-2">Adresă de Email</label>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="Introdu adresa de email"
                     class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     required>
@@ -34,13 +34,13 @@
             <!-- Buton de trimitere -->
             <button type="submit"
                 class="w-full bg-cyan-600 text-white py-2 rounded-md hover:bg-cyan-700 focus:ring-2 focus:ring-cyan-500">
-                Trimite Link de Resetare
+                Send the Reset Link
             </button>
         </form>
 
         <!-- Link pentru întoarcere la login -->
         <div class="mt-4 text-center">
-            <a href="/login" class="text-cyan-600 hover:underline">Înapoi la autentificare</a>
+            <a href="SignIn.html" class="text-cyan-600 hover:underline">Back to SignIn</a>
         </div>
     </div>
 </body>
