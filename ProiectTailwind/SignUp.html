@@ -3,13 +3,17 @@
 <head>
     <style>
         body {
-    background-image: url('/images/SignUp.jpg');
-    background-size: cover; /* Ajustează dimensiunea imaginii */
-    background-position: center; /* Centrează imaginea */
-    background-repeat: no-repeat; /* Evită repetarea imaginii */
-  }
+            background-image: url('/images/SignUp.jpg');
+            background-size: cover;
+            /* Ajustează dimensiunea imaginii */
+            background-position: center;
+            /* Centrează imaginea */
+            background-repeat: no-repeat;
+            /* Evită repetarea imaginii */
+        }
     </style>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/1-removebg-preview.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <script type="module" crossorigin src="./main.js"></script>
@@ -36,7 +40,7 @@
 <body class="bg-[url('/images/SignUp.jpg')]">
     <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar"
         type="button"
-        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-700 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
         <span class="sr-only">Open sidebar</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +51,7 @@
 
     </button>
 
-    <header class="w-full text-center p-2 mt-1 text-gray-900 dark:text-gray-900">
+    <header class="mx-auto max-w-screen-md text-center p-2 mt-1 text-gray-900 dark:text-gray-900">
 
         <h1 class="text-4xl font-bold text-center"><span
                 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Devin-o Membru!</span></h1>
@@ -56,7 +60,7 @@
 
 
     <aside id="logo-sidebar"
-        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        class="fixed top-0 left-0 z-40 w-44 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
 
         <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
@@ -64,8 +68,9 @@
                 <!-- Imagine pentru modul Light -->
                 <img src="./images/2.bg rem.png" class="h-15 me-3 sm:h-15 dark:hidden" alt="Logo Light" />
                 <!-- Imagine pentru modul Dark -->
-                <img src="./images/1-removebg-preview.png" class="h-15 me-3 sm:h-15 hidden dark:block" alt="Logo Dark" />
-              </a>
+                <img src="./images/1-removebg-preview.png" class="h-15 me-3 sm:h-15 hidden dark:block"
+                    alt="Logo Dark" />
+            </a>
 
             <!-- Search Bar -->
             <div class="relative mb-5">
@@ -83,18 +88,17 @@
                 <li>
                     <a href="index.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 22 21">
-                            <path
-                                d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                            <path
-                                d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                        </svg>
+                        
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
+                    </svg>
                         <span class="ms-3">HOME</span>
                     </a>
                 </li>
-                <a href="#"
+                <a href="Products.html"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
@@ -107,13 +111,15 @@
                 <li>
                     <a href="#"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 22 21">
+                        <path
+                            d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
+                        <path
+                            d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                    </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Dashboard</span>
                     </a>
                 </li>
                 <li>
@@ -147,17 +153,18 @@
     </aside>
     <!--   /* Sign Up form */  -->
     <form
-        class="p-4 mx-auto md:ml-60 w-full max-w-lg md:max-w-none md:grid md:grid-cols-1 md:gap-6 flex flex-col items-center justify-center">
+        class="p-4 mx-auto md:ml-53 w-80 max-w-lg md:max-w-none md:grid md:grid-cols-1 md:gap-6 flex flex-col items-center justify-center">
         <div class="grid gap-3 mb-3 md:grid-cols-2 w-full">
             <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">First name</label>
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">First
+                    name</label>
                 <input type="text" id="first_name"
-                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 
                               block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
-                              dark:text-white dark:focus:ring-indigo-400 dark:focus:border-indigo-400 transition duration-300"
-                       placeholder="John" required />
-              </div>
-              
+                              dark:text-white dark:focus:ring-indigo-400 dark:focus:border-indigo-400 transition duration-300" placeholder="John"
+                    required />
+            </div>
+
             <div>
                 <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Last
                     name</label>
@@ -173,29 +180,28 @@
                     placeholder="Accesa" required />
             </div>
             <div>
-                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Phone
-                    number</label>
+                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Phone number</label>
                 <input type="tel" id="phone"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="0740-456-780" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required />
             </div>
         </div>
         <div class="mb-6 w-full">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Email
-                address</label>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Email address</label>
             <input type="email" id="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="john.doe@company.com" required />
         </div>
         <div class="mb-6  w-full">
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Password</label>
+            <label for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Password</label>
             <input type="password" id="password"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="•••••••••" required />
         </div>
         <div class="mb-6  w-full">
-            <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Confirm
-                password</label>
+            <label for="confirm_password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Confirm password</label>
             <input type="password" id="confirm_password"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="•••••••••" required />
