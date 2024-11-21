@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./assets/1-removebg-preview-zU-hV8p3.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleSidebar = document.querySelector('#sidebar-toggle');
+            const sidebar = document.querySelector('#sidebar');
+
+            toggleSidebar.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+            });
+        });
+    </script>
+  <script type="module" crossorigin src="./assets/main-D8lv-bY-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-wAe1d21j.css">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="w-full md:w-1/4 bg-slate-800 text-white min-h-screen p-6 hidden md:block">
+            <h2 class="text-2xl font-bold mb-8">Dashboard</h2>
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block px-4 py-2 hover:bg-cyan-600 rounded">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-cyan-600 rounded">Edit Profile</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-cyan-600 rounded">Change Password</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-cyan-600 rounded">Settings</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-cyan-600 rounded">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Mobile Sidebar Button -->
+        <button id="sidebar-toggle"
+            class="bg-slate-800 text-white p-3 block md:hidden fixed top-4 right-4 z-50 rounded-full">
+            ☰
+        </button>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:p-10">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Edit Profile</h2>
+                <p class="text-gray-600 mb-6">Update your personal details below.</p>
+
+                <form action="/update-profile" method="POST" enctype="multipart/form-data">
+                    <!-- Profile Picture -->
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-medium mb-2">Profile Picture</label>
+                        <div class="flex items-center space-x-4">
+                            <img src="https://via.placeholder.com/100" alt="Profile Picture"
+                                class="w-24 h-24 rounded-full border">
+                            <input type="file" name="profile_picture" class="text-gray-700" accept="image/*">
+                        </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email"
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            required>
+                    </div>
+
+                    <!-- Bio -->
+                    <div class="mb-4">
+                        <label for="bio" class="block text-gray-700 font-medium mb-2">Bio</label>
+                        <textarea id="bio" name="bio" placeholder="Tell us something about yourself..."
+                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="text-right">
+                        <button type="submit"
+                            class="bg-slate-800 text-white py-2 px-6 rounded-md hover:bg-cyan-700 focus:ring-2 focus:ring-cyan-500">
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
